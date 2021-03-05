@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/good_portfolio.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/good_portfolio.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/resume.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/resume.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/template/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/main.blade.php" afterDir="false" />
@@ -177,7 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614656191342</updated>
       <workItem from="1614656192597" duration="1189000" />
-      <workItem from="1614927769748" duration="9218000" />
+      <workItem from="1614927769748" duration="10224000" />
     </task>
     <servers />
   </component>

@@ -708,7 +708,7 @@ class BackController extends Controller
         $update->src = $request->src;
         $update->alt = $request->alt;
         $update->save();
-        return redirect('/backoffice'); 
+        return redirect('/backoffice');
     }
     public function updateAboutMeContents(Request $request, $id)
     {
@@ -739,7 +739,7 @@ class BackController extends Controller
         $update->text = $request->text;
         $update->save();
         return redirect('/backoffice');
-        
+
     }
     public function updateAboutCounts(Request $request, $id)
     {
@@ -922,7 +922,7 @@ class BackController extends Controller
         $update->save();
         return redirect('/backoffice');
 
-        $store = new PortfolioFilter;        
+        $store = new PortfolioFilter;
     }
     public function updateContactTitles(Request $request, $id)
     {
@@ -948,6 +948,7 @@ class BackController extends Controller
         $update->iClass = $request->iClass;
         $update->title = $request->title;
         $update->description = $request->description;
+        $update->save();
         return redirect('/backoffice');
     }
 
@@ -1074,7 +1075,7 @@ class BackController extends Controller
         $destroy->delete();
         return redirect('/backoffice');
     }
-    
+
 
 
     //// DESTROYALL
