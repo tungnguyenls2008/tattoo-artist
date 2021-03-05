@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864b2b5a-97d3-49b3-ade2-ec4ab0af9b89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/kisspng-gtc-custom-tattoo-art-collective-tattoo-artist-b-tattoo-logo-5b335e286998c3.8776006315300930964325.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/good_portfolio.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +137,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -149,6 +152,7 @@
       <recent name="C:\xampp\htdocs\PortfolioLaravel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PortfolioLaravel\database\seeders" />
       <recent name="C:\xampp\htdocs\PortfolioLaravel\public\img" />
       <recent name="C:\xampp\htdocs\PortfolioLaravel\public\img\work" />
     </key>
@@ -168,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614656191342</updated>
       <workItem from="1614656192597" duration="1189000" />
-      <workItem from="1614927769748" duration="6578000" />
+      <workItem from="1614927769748" duration="7199000" />
     </task>
     <servers />
   </component>
