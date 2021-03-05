@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864b2b5a-97d3-49b3-ade2-ec4ab0af9b89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/good_portfolio.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/good_portfolio.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/good_portfolio.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/resume.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/resume.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,13 +144,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PortfolioLaravel\database" />
       <recent name="C:\xampp\htdocs\PortfolioLaravel\public\img" />
       <recent name="C:\xampp\htdocs\PortfolioLaravel" />
     </key>
@@ -174,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614656191342</updated>
       <workItem from="1614656192597" duration="1189000" />
-      <workItem from="1614927769748" duration="7802000" />
+      <workItem from="1614927769748" duration="9218000" />
     </task>
     <servers />
   </component>

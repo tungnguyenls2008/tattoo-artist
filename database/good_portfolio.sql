@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2021 at 10:32 AM
+-- Generation Time: Mar 05, 2021 at 11:14 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -67,18 +67,18 @@ CREATE TABLE `about_interests` (
 --
 
 INSERT INTO `about_interests` (`id`, `divColClass`, `iClass`, `iColor`, `description`, `created_at`, `updated_at`) VALUES
-(1, '', 'ri-store-line', 'color: #ffbb2c;', 'Baking / Cooking', NULL, NULL),
-(2, 'mt-4 mt-md-0', 'ri-bar-chart-box-line', 'color: #5578ff;', 'Coding', NULL, NULL),
-(3, 'mt-4 mt-md-0', 'ri-calendar-todo-line', 'color: #e80368;', 'Organizing', NULL, NULL),
-(4, 'mt-4 mt-md-0', 'ri-paint-brush-line', 'color: #e361ff;', 'Crafting', NULL, NULL),
-(5, 'mt-4', 'ri-database-2-line', 'color: #47aeff;', 'Traveling', NULL, NULL),
-(6, 'mt-4', 'ri-gradienter-line', 'color: #ffa76e;', 'Learning foreign languages', NULL, NULL),
-(7, 'mt-4', 'ri-file-list-3-line', 'color: #11dbcf;', 'Reading', NULL, NULL),
-(8, 'mt-4', 'ri-price-tag-2-line', 'color: #4233ff;', 'Meditation', NULL, NULL),
-(9, 'mt-4', 'ri-anchor-line', 'color: #b2904f;', 'Taking walks', NULL, NULL),
-(10, 'mt-4', 'ri-disc-line', 'color: #b20969;', 'Enjoying Music', NULL, NULL),
-(11, 'mt-4', 'ri-base-station-line', 'color: #ff5828;', 'Asian Culture', NULL, NULL),
-(12, 'mt-4', 'ri-fingerprint-line', 'color: #29cc61;', 'Hiking', NULL, NULL);
+(1, NULL, 'ri-store-line', 'color: #ffbb2c;', 'Làm bánh / Nấu ăn', NULL, '2021-03-05 02:49:09'),
+(2, 'mt-4 mt-md-0', 'ri-bar-chart-box-line', 'color: #5578ff;', 'Vọc vạch linh tinh', NULL, '2021-03-05 02:50:28'),
+(3, 'mt-4 mt-md-0', 'ri-calendar-todo-line', 'color: #e80368;', 'Tổ chức sự kiện', NULL, '2021-03-05 02:50:12'),
+(4, 'mt-4 mt-md-0', 'ri-paint-brush-line', 'color: #e361ff;', 'Điều chế các thứ', NULL, '2021-03-05 02:50:57'),
+(5, 'mt-4', 'ri-database-2-line', 'color: #47aeff;', 'Du lịch', NULL, '2021-03-05 02:51:09'),
+(6, 'mt-4', 'ri-gradienter-line', 'color: #ffa76e;', 'Học ngoại ngữ', NULL, '2021-03-05 02:51:21'),
+(7, 'mt-4', 'ri-file-list-3-line', 'color: #11dbcf;', 'Đọc sách', NULL, '2021-03-05 02:51:36'),
+(8, 'mt-4', 'ri-price-tag-2-line', 'color: #4233ff;', 'Yoga', NULL, '2021-03-05 03:01:57'),
+(9, 'mt-4', 'ri-anchor-line', 'color: #b2904f;', 'Đi dạo', NULL, '2021-03-05 02:52:11'),
+(10, 'mt-4', 'ri-disc-line', 'color: #b20969;', 'Nghe nhạc', NULL, '2021-03-05 02:52:21'),
+(11, 'mt-4', 'ri-base-station-line', 'color: #ff5828;', 'Văn hóa Á Đông', NULL, '2021-03-05 02:52:34'),
+(12, 'mt-4', 'ri-fingerprint-line', 'color: #29cc61;', 'Leo núi', NULL, '2021-03-05 02:52:44');
 
 -- --------------------------------------------------------
 
@@ -172,13 +172,13 @@ CREATE TABLE `about_skills` (
 --
 
 INSERT INTO `about_skills` (`id`, `skill`, `iValue`, `ariaValue`, `created_at`, `updated_at`) VALUES
-(1, 'Classic Americana', '90%', 90, NULL, '2021-03-05 00:22:01'),
-(2, 'Japanese', '85%', 85, NULL, '2021-03-05 00:22:20'),
-(3, 'Black and grey', '100%', 100, NULL, '2021-03-05 00:23:01'),
-(4, 'Portraiture', '60%', 60, NULL, '2021-03-05 00:23:27'),
-(5, 'Realism', '70%', 70, NULL, '2021-03-05 00:23:45'),
-(6, 'Biomechanical', '65%', 65, NULL, '2021-03-05 00:24:00'),
-(7, 'Realistic Trash Polka', '85%', 85, NULL, '2021-03-05 00:24:22');
+(1, 'Phong cách Americana cổ điển', '90%', 90, NULL, '2021-03-05 02:46:28'),
+(2, 'Phong cách Nhật Bản', '85%', 85, NULL, '2021-03-05 02:46:46'),
+(3, 'Phong cách Đen và Xám', '100%', 100, NULL, '2021-03-05 02:47:11'),
+(4, 'Chân dung', '60%', 60, NULL, '2021-03-05 02:47:25'),
+(5, 'Tả thực', '70%', 70, NULL, '2021-03-05 02:47:44'),
+(6, 'Phong cách Cơ sinh học', '65%', 65, NULL, '2021-03-05 02:48:11'),
+(7, 'Siêu thực', '85%', 85, NULL, '2021-03-05 02:48:28');
 
 -- --------------------------------------------------------
 
@@ -224,10 +224,10 @@ CREATE TABLE `contact_cards` (
 --
 
 INSERT INTO `contact_cards` (`id`, `divColClass`, `iClass`, `title`, `description`, `created_at`, `updated_at`) VALUES
-(1, '', 'bx bx-map', 'My Address', 'Hà Nội, Việt Nam', NULL, NULL),
-(2, 'mt-4 mt-md-0', 'bx bx-share-alt', 'Social Profiles', '', NULL, NULL),
-(3, 'mt-4', 'bx bx-envelope', 'Email Me', 'greeny-ink@gmail.com', NULL, NULL),
-(4, 'mt-4', 'bx bx-phone-call', 'Call Me', '+84 0969 546 681', NULL, NULL);
+(1, '', 'bx bx-map', 'Địa chỉ', 'Hà Nội, Việt Nam', NULL, NULL),
+(2, '', 'bx bx-map', 'Instagram', 'https://www.instagram.com/greeny.ink/', NULL, NULL),
+(3, 'mt-4', 'bx bx-envelope', 'Email ', 'greeny-ink@gmail.com', NULL, NULL),
+(4, 'mt-4', 'bx bx-phone-call', 'ĐTDD', '+84 0969 546 681', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -448,13 +448,13 @@ CREATE TABLE `portfolio_filters` (
 --
 
 INSERT INTO `portfolio_filters` (`id`, `data`, `name`, `created_at`, `updated_at`) VALUES
-(1, '*', 'All', NULL, NULL),
-(2, '.filter-realism', 'Realism', NULL, '2021-03-05 01:15:22'),
-(3, '.filter-surrealism', 'Surrealism', NULL, '2021-03-05 01:17:32'),
-(4, '.filter-flower', 'Flower', NULL, '2021-03-05 01:17:43'),
-(5, '.filter-cartoon', 'Cartoon', '2021-03-05 01:37:14', '2021-03-05 01:37:14'),
-(6, '.filter-words', 'Words', '2021-03-05 01:37:27', '2021-03-05 01:37:27'),
-(7, '.filter-animal', 'Animal', '2021-03-05 01:37:40', '2021-03-05 01:37:40');
+(1, '*', 'Tất cả', NULL, '2021-03-05 02:59:11'),
+(2, '.filter-realism', 'Tả thực', NULL, '2021-03-05 02:59:21'),
+(3, '.filter-surrealism', 'Siêu thực', NULL, '2021-03-05 02:59:37'),
+(4, '.filter-flower', 'Hoa hoét', NULL, '2021-03-05 02:59:45'),
+(5, '.filter-cartoon', 'Hoạt hình', '2021-03-05 01:37:14', '2021-03-05 02:59:58'),
+(6, '.filter-words', 'Chữ cách điệu', '2021-03-05 01:37:27', '2021-03-05 03:00:09'),
+(7, '.filter-animal', 'Động vật', '2021-03-05 01:37:40', '2021-03-05 03:00:24');
 
 -- --------------------------------------------------------
 
@@ -569,8 +569,8 @@ CREATE TABLE `resume_professionals` (
 --
 
 INSERT INTO `resume_professionals` (`id`, `title`, `date`, `institution`, `task1`, `task2`, `task3`, `task4`, `task5`, `task6`, `created_at`, `updated_at`) VALUES
-(1, 'Resourcer Intern', 'February 2020 - May 2020', 'Modis Belgium – Modis IT & Engineering, Grand-Bigard', 'Search of the different IT profiles and the redaction of IT\r\n                    basics documentation', 'Search of specific candidates according to client’s criteria\r\n                    on many platforms (websites and databases) and the\r\n                    correspondence by phone and by mail', 'Search of companies in need of candidates and the creation\r\n                    of a list for the Business Manager', 'Creating candidates’ profiles in Modis’ database and\r\n                    creating companies accounts in Adecco’s database\r\n                    (Salesforce)', 'Updating my Excel file containing all the researches’ results\r\n                    (clients, contacts and job offer)', '', NULL, NULL),
-(2, 'Administration Intern', 'May 2018', 'AWEX – Directorate for Financial Incentives, Brussels', 'Assistance in controlling incoming files', 'File analysis, mail writing', 'Excel database updating, mail archiving, graphics creation and getting the tasks done by following the database.', 'Online currency searches', '', '', NULL, NULL);
+(1, 'Thợ xăm chính', '05/2020 - Nay', 'Một hiệu xăm nào đó', 'Đã trưởng thành và ko ngán hình nào', 'Lương lậu có vẻ ko đc như ý', 'Chế độ đãi ngộ như shit', 'Lại còn ko có hợp đồng lao đông o.0', 'Muốn bơi ra ngoài tự làm riêng', 'Tuổi trẻ ngắn lắm ko đc hoang phí (_._!)', NULL, '2021-03-05 02:58:54'),
+(2, 'Học việc xăm hình', '08/2019 - 05/2020', 'Một hiệu xăm nào đó', 'Học các bước căn bản để làm một hình xăm', 'Xăm cho vô số các tảng bì heo từ bé đến to', 'Luộn thịt heo ăn, bỏ thì phí', 'Xăm lên người những hình xăm nhỏ', 'Xăm hình to to', 'Tự tin xăm được mọi thể loại', NULL, '2021-03-05 02:57:07');
 
 -- --------------------------------------------------------
 
@@ -590,9 +590,9 @@ CREATE TABLE `resume_title2s` (
 --
 
 INSERT INTO `resume_title2s` (`id`, `title`, `created_at`, `updated_at`) VALUES
-(1, 'Sumary', NULL, NULL),
-(2, 'Education', NULL, NULL),
-(3, 'Professional Experience', NULL, NULL);
+(1, 'Tóm lược', NULL, '2021-03-05 02:53:11'),
+(2, 'Học vấn', NULL, '2021-03-05 02:53:25'),
+(3, 'Kinh nghiệm chuyên môn', NULL, '2021-03-05 02:53:37');
 
 -- --------------------------------------------------------
 
@@ -948,7 +948,7 @@ ALTER TABLE `resume_presentations`
 -- AUTO_INCREMENT for table `resume_professionals`
 --
 ALTER TABLE `resume_professionals`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `resume_title2s`
