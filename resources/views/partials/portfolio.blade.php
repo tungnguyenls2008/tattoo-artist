@@ -23,6 +23,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item {{$div->filter}}">
             <div class="portfolio-wrap">
               <img src="{{asset($div->imgsrc)}}" class="img-fluid" alt="">
+                <a href="{{asset($div->imgsrc)}}"></a>
               <div class="portfolio-info">
                 <h4>{{$div->title}}</h4>
                 <p>{{$div->description}}</p>

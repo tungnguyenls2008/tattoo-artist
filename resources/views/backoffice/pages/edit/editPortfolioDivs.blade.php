@@ -19,9 +19,10 @@
                     </div>
                 @endif
             </div>
-    
+
             <form action="/updatePortfolioDivs/{{$edit->id}}" method="POST">
                 @csrf
+
                 <div class="form-group">
                     <label for="">Filter : </label>
                     <input type="text" name="filter" value="{{old('filter') ? old('filter') : $edit->filter}}">
@@ -46,10 +47,10 @@
                     <label for="">Link : </label>
                     <input type="text" name="a2href" value="{{old('a2href') ? old('a2href') : $edit->a2href}}">
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">UPDATE</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

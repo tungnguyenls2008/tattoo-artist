@@ -19,16 +19,16 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/storePortfolioDivs" method="POST">
+
+            <form action="/storePortfolioDivs" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label for="">Filter : </label>
                     <input type="text" name="filter" value="{{old('filter')}}">
                 </div>
                 <div class="form-group">
-                    <label for="">Src : </label>
-                    <input type="text" name="imgsrc" value="{{old('imgsrc')}}">
+                    <label for="">Image : </label>
+                    <input type="file" name="imgUpload" id="imgUpload" value="{{old('imgUpload')}}" required>
                 </div>
                 <div class="form-group">
                     <label for="">Title : </label>
@@ -46,10 +46,10 @@
                     <label for="">Link : </label>
                     <input type="text" name="a2href" value="{{old('a2href')}}">
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">ADD</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

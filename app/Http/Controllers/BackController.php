@@ -24,6 +24,7 @@ use App\Models\ResumeProfessional;
 use App\Models\ResumeTitle;
 use App\Models\ResumeTitle2;
 use App\Models\SocialLink;
+use Illuminate\Http\File;
 use Illuminate\Http\Request;
 
 class BackController extends Controller
@@ -402,22 +403,24 @@ class BackController extends Controller
     {
         $validation = $request->validate([
             "filter" => 'required',
-            "imgsrc" => 'required',
+            "imgUpload" => 'required',
+            //"imgUpload" => 'required|mimes:jpg,jpeg,png,gif',
             "title" => 'required',
             "description" => 'required',
             "a1Title" => 'required',
             "a2href" => 'required',
         ]);
 
+        $path = $request->file('imgUpload')->store('','public');
         $store = new PortfolioDiv;
         $store->filter = $request->filter;
-        $store->imgsrc = $request->imgsrc;
+        $store->imgsrc = '/img/work/'.$path;
         $store->title = $request->title;
         $store->description = $request->description;
         $store->a1Title = $request->a1Title;
         $store->a2href = $request->a2href;
         $store->save();
-        return redirect()->back();
+        return redirect()->back()->with(['success'=>'Image uploaded successfully']);
     }
     public function storeContactTitles(Request $request)
     {
