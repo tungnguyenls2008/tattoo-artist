@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864b2b5a-97d3-49b3-ade2-ec4ab0af9b89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/work/ezdF1avoceesHOtPpML1vJS1QeoQJKyqXET0BOYw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backoffice/pages/create/createAboutMeContents.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backoffice/pages/create/createAboutMeContents.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backoffice/pages/create/createAboutTitles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backoffice/pages/create/createAboutTitles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backoffice/pages/edit/editAboutMeContents.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backoffice/pages/edit/editAboutMeContents.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +176,7 @@
       <updated>1614656191342</updated>
       <workItem from="1614656192597" duration="1189000" />
       <workItem from="1614927769748" duration="10276000" />
-      <workItem from="1614993728557" duration="5771000" />
+      <workItem from="1614993728557" duration="6476000" />
     </task>
     <servers />
   </component>

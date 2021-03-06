@@ -19,7 +19,7 @@
                     </div>
                 @endif
             </div>
-    
+
             <form action="/updateAboutTitles/{{$edit->id}}" method="POST">
                 @csrf
                 <div class="form-group">
@@ -28,12 +28,12 @@
                 </div>
                 <div class="form-group">
                     <label for="">Text : </label>
-                    <input type="text" name="para" value="{{old('para') ? old('para') : $edit->para}}">
+                    <textarea name="para" >{{old('para') ? old('para') : $edit->para}}</textarea>
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">UPDATE</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

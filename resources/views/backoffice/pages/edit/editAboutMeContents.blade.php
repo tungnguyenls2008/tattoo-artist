@@ -19,7 +19,7 @@
                     </div>
                 @endif
             </div>
-    
+
             <form action="/updateAboutMeContents/{{$edit->id}}" method="POST">
                 @csrf
                 <div class="form-group">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">Description : </label>
-                    <input type="text" name="description" value="{{old('description') ? old('description') : $edit->description}}">
+                    <textarea name="description" >{{old('description') ? old('description') : $edit->description}}</textarea>
                 </div>
                 <div class="form-group">
                     <label for="">Text : </label>
@@ -38,5 +38,5 @@
             </form>
         </div>
     </div>
-    
+
 @endsection

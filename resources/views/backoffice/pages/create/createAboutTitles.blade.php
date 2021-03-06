@@ -19,7 +19,7 @@
                     </div>
                 @endif
             </div>
-    
+
             <form action="/storeAboutTitles" method="POST">
                 @csrf
                 <div class="form-group">
@@ -28,12 +28,12 @@
                 </div>
                 <div class="form-group">
                     <label for="">Text : </label>
-                    <input type="text" name="para" value="{{old('para')}}">
+                    <textarea name="para" value="{{old('para')}}"></textarea>
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">ADD</button>
             </form>
         </div>
     </div>
-    
+
 @endsection
