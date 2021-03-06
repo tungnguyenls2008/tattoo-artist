@@ -24,8 +24,8 @@ use App\Models\ResumeProfessional;
 use App\Models\ResumeTitle;
 use App\Models\ResumeTitle2;
 use App\Models\SocialLink;
-use Illuminate\Http\File;
 use Illuminate\Http\Request;
+use File;
 
 class BackController extends Controller
 {
@@ -1063,7 +1063,11 @@ class BackController extends Controller
     public function destroyPortfolioDivs($id)
     {
         $destroy = PortfolioDiv::find($id);
+        if(File::exists(public_path($destroy->imgsrc))){
+            File::delete(public_path($destroy->imgsrc));
+        }
         $destroy->delete();
+
         return redirect('/backoffice');
     }
     public function destroyContactTitles($id)
