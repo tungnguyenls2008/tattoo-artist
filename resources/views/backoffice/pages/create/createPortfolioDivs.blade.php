@@ -20,7 +20,7 @@
                 @endif
             </div>
 
-            <form action="/storePortfolioDivs" method="POST" enctype="multipart/form-data">
+            <form action="{{getenv('APP_URL')}}/storePortfolioDivs" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label for="">Filter : </label>
