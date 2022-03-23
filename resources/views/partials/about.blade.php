@@ -62,7 +62,7 @@
     <div class="skills container">
 
       <div class="section-title">
-        <h2>{{$aboutTitle[1]->title}}</h2>
+        <h2>{{$aboutTitle[1]->title??''}}</h2>
       </div>
 
       <div class="row skills-content">
@@ -82,7 +82,7 @@
               </div>
               @if ($skillcount<8)
                 <div class="col-lg-6">
-              @endif  
+              @endif
             @endif
           @endforeach
 
@@ -94,7 +94,7 @@
     <div class="interests container">
 
       <div class="section-title">
-        <h2>{{$aboutTitle[2]->title}}</h2>
+        <h2>{{$aboutTitle[2]->title??''}}</h2>
       </div>
 
       <div class="row">
@@ -111,5 +111,5 @@
 
     </div><!-- End Interests -->
 
-    
+
 </section><!-- End About Section -->

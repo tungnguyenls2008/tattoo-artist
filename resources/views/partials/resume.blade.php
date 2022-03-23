@@ -22,7 +22,7 @@
             </p>
           </div>
 
-          <h3 class="resume-title">{{$resumeTitles2[1]->title}}</h3>
+          <h3 class="resume-title">{{$resumeTitles2[1]->title??''}}</h3>
           @foreach ($resumeEducations as $education)
             <div class="resume-item">
               <h4>{{$education->title}}</h4>
@@ -33,7 +33,7 @@
             @endforeach
         </div>
         <div class="col-lg-6">
-          <h3 class="resume-title">{{$resumeTitles2[2]->title}}</h3>
+          <h3 class="resume-title">{{$resumeTitles2[2]->title??''}}</h3>
           @foreach ($resumeProfessionals as $professional)
             <div class="resume-item">
               <h4>{{$professional->title}}</h4>
