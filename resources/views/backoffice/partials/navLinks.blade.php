@@ -4,9 +4,9 @@
             <h1 class="m-3">Nav Links</h1>
             <div class="w-25 d-flex justify-content-around my-2">
                 {{-- Create --}}
-                <a href="/createNavLinks" class="btn btn-success">ADD</a>
+                <a href="{{getenv('APP_URL')}}/createNavLinks" class="btn btn-success">ADD</a>
                 {{-- Delete All --}}
-                <form action="/destroyAllNavLinks" method="POST">
+                <form action="{{getenv('APP_URL')}}/destroyAllNavLinks" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-dark">DELETE ALL</button>
                 </form>
@@ -34,15 +34,15 @@
                     <td>{{$link->name}}</td>
                     <td>
                         {{-- Show --}}
-                        <a href="/showNavLinks/{{$link->id}}" class="btn btn-primary">SHOW</a>
+                        <a href="{{getenv('APP_URL')}}/showNavLinks/{{$link->id}}" class="btn btn-primary">SHOW</a>
                     </td>
                     <td>
                         {{-- Edit --}}
-                        <a href="/editNavLinks/{{$link->id}}" class="btn btn-warning">EDIT</a>
+                        <a href="{{getenv('APP_URL')}}/editNavLinks/{{$link->id}}" class="btn btn-warning">EDIT</a>
                     </td>
                     <td>
                         {{-- Delete --}}
-                        <form action="/destroyNavLinks/{{$link->id}}" method="POST">
+                        <form action="{{getenv('APP_URL')}}/destroyNavLinks/{{$link->id}}" method="POST">
                             @csrf
                             <button type="submit" class="btn btn-danger">DELETE</button>
                         </form>

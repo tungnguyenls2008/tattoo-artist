@@ -3,9 +3,9 @@
         <h1 class="m-3">About MeInfos</h1>
         <div class="w-25 d-flex justify-content-around my-2">
             {{-- Create --}}
-            <a href="/createAboutMeInfos" class="btn btn-success">ADD</a>
+            <a href="{{getenv('APP_URL')}}/createAboutMeInfos" class="btn btn-success">ADD</a>
             {{-- Delete All --}}
-            <form action="/destroyAllAboutMeInfos" method="POST">
+            <form action="{{getenv('APP_URL')}}/destroyAllAboutMeInfos" method="POST">
                 @csrf
                 <button type="submit" class="btn btn-dark">DELETE ALL</button>
             </form>
@@ -35,15 +35,15 @@
                 <td>{{$link->text}}</td>
                 <td>
                     {{-- Show --}}
-                    <a href="/showAboutMeInfos/{{$link->id}}" class="btn btn-primary">SHOW</a>
+                    <a href="{{getenv('APP_URL')}}/showAboutMeInfos/{{$link->id}}" class="btn btn-primary">SHOW</a>
                 </td>
                 <td>
                     {{-- Edit --}}
-                    <a href="/editAboutMeInfos/{{$link->id}}" class="btn btn-warning">EDIT</a>
+                    <a href="{{getenv('APP_URL')}}/editAboutMeInfos/{{$link->id}}" class="btn btn-warning">EDIT</a>
                 </td>
                 <td>
                     {{-- Delete --}}
-                    <form action="/destroyAboutMeInfos/{{$link->id}}" method="POST">
+                    <form action="{{getenv('APP_URL')}}/destroyAboutMeInfos/{{$link->id}}" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-danger">DELETE</button>
                     </form>
