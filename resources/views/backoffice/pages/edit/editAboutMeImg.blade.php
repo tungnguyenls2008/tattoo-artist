@@ -19,8 +19,8 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/updateAboutMeImg/{{$edit->id}}" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/updateAboutMeImg/{{$edit->id}}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Src : </label>
@@ -34,5 +34,5 @@
             </form>
         </div>
     </div>
-    
+
 @endsection

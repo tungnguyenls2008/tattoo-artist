@@ -37,8 +37,8 @@ class NavlinkSeeder extends Seeder
                     'name' => "Contact"
                 ],
                 [
-                    'href' => "/backoffice",
-                    'name' => "Backoffice"
+                    'href' => getenv('APP_URL')."/backend",
+                    'name' => "backend"
                 ]
             ]
         );

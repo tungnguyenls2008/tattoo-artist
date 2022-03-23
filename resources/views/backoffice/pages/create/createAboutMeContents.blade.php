@@ -20,7 +20,7 @@
                 @endif
             </div>
 
-            <form action="/storeAboutMeContents" method="POST">
+            <form action="{{getenv('APP_URL')}}/storeAboutMeContents" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Title : </label>

@@ -19,8 +19,8 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/storeAboutMeInfos" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/storeAboutMeInfos" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Icon : </label>
@@ -38,5 +38,5 @@
             </form>
         </div>
     </div>
-    
+
 @endsection

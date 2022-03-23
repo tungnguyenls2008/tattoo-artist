@@ -19,17 +19,17 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/storeResumeInfos" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/storeResumeInfos" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Info : </label>
                     <input type="text" name="info" value="{{old('info')}}">
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">ADD</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

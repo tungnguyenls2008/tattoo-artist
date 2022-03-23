@@ -14,7 +14,7 @@
                 <h5 class="card-title">Task 4 : {{$show->task4}}</h5>
                 <h5 class="card-title">Task 5 : {{$show->task5}}</h5>
                 <h5 class="card-title">Task 6 : {{$show->task6}}</h5>
-                <a href="/backoffice" class="card-link">Go Back</a>
+                <a href="{{getenv('APP_URL')}}/backend" class="card-link">Go Back</a>
                 </div>
             </div>
         </div>

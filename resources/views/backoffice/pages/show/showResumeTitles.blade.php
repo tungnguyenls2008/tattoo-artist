@@ -7,7 +7,7 @@
                 <div class="card-body">
                 <h3 class="card-title">Title : {{$show->title}}</h3>
                 <h4 class="card-subtitle mb-2 ">Text : {{$show->para}}</h4>
-                <a href="/backoffice" class="card-link">Go Back</a>
+                <a href="{{getenv('APP_URL')}}/backend" class="card-link">Go Back</a>
                 </div>
             </div>
         </div>

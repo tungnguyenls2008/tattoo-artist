@@ -20,7 +20,7 @@
                 @endif
             </div>
 
-            <form action="/updatePortfolioDivs/{{$edit->id}}" method="POST">
+            <form action="{{getenv('APP_URL')}}/updatePortfolioDivs/{{$edit->id}}" method="POST">
                 @csrf
 
                 <div class="form-group">

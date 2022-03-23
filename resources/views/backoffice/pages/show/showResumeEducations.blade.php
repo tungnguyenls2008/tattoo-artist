@@ -9,7 +9,7 @@
                 <h4 class="card-subtitle mb-2 ">Date : {{$show->date}}</h4>
                 <h4 class="card-title">Institution : {{$show->institution}}</h4>
                 <h6 class="card-title">Description : {{$show->description}}</h6>
-                <a href="/backoffice" class="card-link">Go Back</a>
+                <a href="{{getenv('APP_URL')}}/backend" class="card-link">Go Back</a>
                 </div>
             </div>
         </div>

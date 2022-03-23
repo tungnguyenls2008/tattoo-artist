@@ -3,9 +3,9 @@
         <h1 class="m-3">Portfolio Divs</h1>
         <div class="w-25 d-flex justify-content-around my-2">
             {{-- Create --}}
-            <a href="/createPortfolioDivs" class="btn btn-success">ADD</a>
+            <a href="{{getenv('APP_URL')}}/createPortfolioDivs" class="btn btn-success">ADD</a>
             {{-- Delete All --}}
-            <form action="/destroyAllPortfolioDivs" method="POST">
+            <form action="{{getenv('APP_URL')}}/destroyAllPortfolioDivs" method="POST">
                 @csrf
                 <button type="submit" class="btn btn-dark">DELETE ALL</button>
             </form>
@@ -41,15 +41,15 @@
                 <td>{{$link->a2href}}</td>
                 <td>
                     {{-- Show --}}
-                    <a href="/showPortfolioDivs/{{$link->id}}" class="btn btn-primary">SHOW</a>
+                    <a href="{{getenv('APP_URL')}}/showPortfolioDivs/{{$link->id}}" class="btn btn-primary">SHOW</a>
                 </td>
                 <td>
                     {{-- Edit --}}
-                    <a href="/editPortfolioDivs/{{$link->id}}" class="btn btn-warning">EDIT</a>
+                    <a href="{{getenv('APP_URL')}}/editPortfolioDivs/{{$link->id}}" class="btn btn-warning">EDIT</a>
                 </td>
                 <td>
                     {{-- Delete --}}
-                    <form action="/destroyPortfolioDivs/{{$link->id}}" method="POST">
+                    <form action="{{getenv('APP_URL')}}/destroyPortfolioDivs/{{$link->id}}" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-danger">DELETE</button>
                     </form>

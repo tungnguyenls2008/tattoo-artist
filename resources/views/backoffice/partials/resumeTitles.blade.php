@@ -3,9 +3,9 @@
         <h1 class="m-3">Resume Titles</h1>
         <div class="w-25 d-flex justify-content-around my-2">
             {{-- Create --}}
-            <a href="/createResumeTitles" class="btn btn-success">ADD</a>
+            <a href="{{getenv('APP_URL')}}/createResumeTitles" class="btn btn-success">ADD</a>
             {{-- Delete All --}}
-            <form action="/destroyAllResumeTitles" method="POST">
+            <form action="{{getenv('APP_URL')}}/destroyAllResumeTitles" method="POST">
                 @csrf
                 <button type="submit" class="btn btn-dark">DELETE ALL</button>
             </form>
@@ -33,15 +33,15 @@
                 <td>{{$link->para}}</td>
                 <td>
                     {{-- Show --}}
-                    <a href="/showResumeTitles/{{$link->id}}" class="btn btn-primary">SHOW</a>
+                    <a href="{{getenv('APP_URL')}}/showResumeTitles/{{$link->id}}" class="btn btn-primary">SHOW</a>
                 </td>
                 <td>
                     {{-- Edit --}}
-                    <a href="/editResumeTitles/{{$link->id}}" class="btn btn-warning">EDIT</a>
+                    <a href="{{getenv('APP_URL')}}/editResumeTitles/{{$link->id}}" class="btn btn-warning">EDIT</a>
                 </td>
                 <td>
                     {{-- Delete --}}
-                    <form action="/destroyResumeTitles/{{$link->id}}" method="POST">
+                    <form action="{{getenv('APP_URL')}}/destroyResumeTitles/{{$link->id}}" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-danger">DELETE</button>
                     </form>

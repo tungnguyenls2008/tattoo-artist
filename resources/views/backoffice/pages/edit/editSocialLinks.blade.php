@@ -19,8 +19,8 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/updateSocialLinks/{{$edit->id}}" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/updateSocialLinks/{{$edit->id}}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Link : </label>
@@ -34,10 +34,10 @@
                     <label for="">Icon : </label>
                     <input type="text" name="iClass" value="{{old('iClass') ? old('iClass') : $edit->iClass}}">
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">UPDATE</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

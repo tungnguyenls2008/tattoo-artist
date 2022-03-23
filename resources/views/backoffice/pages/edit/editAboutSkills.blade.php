@@ -19,8 +19,8 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/updateAboutSkills/{{$edit->id}}" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/updateAboutSkills/{{$edit->id}}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Skill : </label>
@@ -34,10 +34,10 @@
                     <label for="">Number : </label>
                     <input type="text" name="ariaValue" value="{{old('ariaValue') ? old('ariaValue') : $edit->ariaValue}}">
                 </div>
-                
+
                 <button type="submit" class="btn btn-success my-3">UPDATE</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

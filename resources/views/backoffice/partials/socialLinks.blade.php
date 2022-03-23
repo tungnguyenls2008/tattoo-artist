@@ -3,9 +3,9 @@
         <h1 class="m-3">Social Links</h1>
         <div class="w-25 d-flex justify-content-around my-2">
             {{-- Create --}}
-            <a href="/createSocialLinks" class="btn btn-success">ADD</a>
+            <a href="{{getenv('APP_URL')}}/createSocialLinks" class="btn btn-success">ADD</a>
             {{-- Delete All --}}
-            <form action="/destroyAllSocialLinks" method="POST">
+            <form action="{{getenv('APP_URL')}}/destroyAllSocialLinks" method="POST">
                 @csrf
                 <button type="submit" class="btn btn-dark">DELETE ALL</button>
             </form>
@@ -35,15 +35,15 @@
                 {{-- <td>{{$link->iClass}}</td> --}}
                 <td>
                     {{-- Show --}}
-                    <a href="/showSocialLinks/{{$link->id}}" class="btn btn-primary">SHOW</a>
+                    <a href="{{getenv('APP_URL')}}/showSocialLinks/{{$link->id}}" class="btn btn-primary">SHOW</a>
                 </td>
                 <td>
                     {{-- Edit --}}
-                    <a href="/editSocialLinks/{{$link->id}}" class="btn btn-warning">EDIT</a>
+                    <a href="{{getenv('APP_URL')}}/editSocialLinks/{{$link->id}}" class="btn btn-warning">EDIT</a>
                 </td>
                 <td>
                     {{-- Delete --}}
-                    <form action="/destroySocialLinks/{{$link->id}}" method="POST">
+                    <form action="{{getenv('APP_URL')}}/destroySocialLinks/{{$link->id}}" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-danger">DELETE</button>
                     </form>

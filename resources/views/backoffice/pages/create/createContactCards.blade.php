@@ -19,8 +19,8 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/storeContactCards" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/storeContactCards" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Margin : </label>
@@ -42,5 +42,5 @@
             </form>
         </div>
     </div>
-    
+
 @endsection

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - Backoffice</title>
+    <title>Portfolio - backend</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body style="background: url('{{asset('img/bg.jpg')}}')">
@@ -23,23 +23,23 @@
                     Home
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/backoffice#navLinks">Nav Links</a>
-                    <a class="dropdown-item" href="/backoffice#socialLinks">Social Links</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#navLinks">Nav Links</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#socialLinks">Social Links</a>
                   </div>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/backoffice#aboutTitles">About Titles</a>
-                    <a class="dropdown-item" href="/backoffice#aboutMeImg">About MeImage</a>
-                    <a class="dropdown-item" href="/backoffice#aboutMeContents">About MeContents</a>
-                    <a class="dropdown-item" href="/backoffice#aboutMeInfos">About MeInfos</a>
-                    <a class="dropdown-item" href="/backoffice#aboutCounts">About Counts</a>
-                    <a class="dropdown-item" href="/backoffice#aboutSkills">About Skills</a>
-                    <a class="dropdown-item" href="/backoffice#aboutInterests">About Interests</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#aboutTitles">About Titles</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#aboutMeImg">About MeImage</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#aboutMeContents">About MeContents</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#aboutMeInfos">About MeInfos</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#aboutCounts">About Counts</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#aboutSkills">About Skills</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#aboutInterests">About Interests</a>
                   </div>
                 </li>
 
@@ -48,33 +48,33 @@
                     Resume
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/backoffice#resumeTitles">Resume Titles</a>
-                    <a class="dropdown-item" href="/backoffice#resumeTitles2">Resume Subtitles</a>
-                    <a class="dropdown-item" href="/backoffice#resumePresentations">Resume Presentation</a>
-                    <a class="dropdown-item" href="/backoffice#resumeInfos">Resume Infos</a>
-                    <a class="dropdown-item" href="/backoffice#resumeEducations">Resume Education</a>
-                    <a class="dropdown-item" href="/backoffice#resumeProfessionals">Resume Professional</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#resumeTitles">Resume Titles</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#resumeTitles2">Resume Subtitles</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#resumePresentations">Resume Presentation</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#resumeInfos">Resume Infos</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#resumeEducations">Resume Education</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#resumeProfessionals">Resume Professional</a>
                   </div>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Portfolio
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/backoffice#portfolioTitles">Portfolio Titles</a>
-                    <a class="dropdown-item" href="/backoffice#portfolioFilters">Portfolio Filters</a>
-                    <a class="dropdown-item" href="/backoffice#portfolioDivs">Portfolio Divs</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#portfolioTitles">Portfolio Titles</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#portfolioFilters">Portfolio Filters</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#portfolioDivs">Portfolio Divs</a>
                   </div>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Contact
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/backoffice#contactTitles">Contact Titles</a>
-                    <a class="dropdown-item" href="/backoffice#contactCards">Contact Cards</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#contactTitles">Contact Titles</a>
+                    <a class="dropdown-item" href="{{getenv('APP_URL')}}/backend#contactCards">Contact Cards</a>
                   </div>
                 </li>
               </ul>

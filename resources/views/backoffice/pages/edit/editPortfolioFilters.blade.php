@@ -19,8 +19,8 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/updatePortfolioFilters/{{$edit->id}}" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/updatePortfolioFilters/{{$edit->id}}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Data : </label>
@@ -30,10 +30,10 @@
                     <label for="">Name : </label>
                     <input type="text" name="name" value="{{old('name') ? old('name') : $edit->name}}">
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">UPDATE</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

@@ -11,7 +11,7 @@
                 <h4 class="card-subtitle mb-2 ">Description : {{$show->description}}</h4>
                 <h3 class="card-title">Title : {{$show->a1Title}}</h3>
                 <h4 class="card-subtitle mb-2 ">Link : {{$show->a2href}}</h4>
-                <a href="/backoffice" class="card-link">Go Back</a>
+                <a href="{{getenv('APP_URL')}}/backend" class="card-link">Go Back</a>
                 </div>
             </div>
         </div>

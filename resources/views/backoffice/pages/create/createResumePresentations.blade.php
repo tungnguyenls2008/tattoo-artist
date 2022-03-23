@@ -19,8 +19,8 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/storeResumePresentations" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/storeResumePresentations" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Name : </label>
@@ -30,10 +30,10 @@
                     <label for="">Description : </label>
                     <input type="text" name="text" value="{{old('text')}}">
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">ADD</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

@@ -19,17 +19,17 @@
                     </div>
                 @endif
             </div>
-    
-            <form action="/updateResumeTitles2/{{$edit->id}}" method="POST">
+
+            <form action="{{getenv('APP_URL')}}/updateResumeTitles2/{{$edit->id}}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="">Title : </label>
                     <input type="text" name="title" value="{{old('title') ? old('title') : $edit->title}}">
                 </div>
-    
+
                 <button type="submit" class="btn btn-success my-3">UPDATE</button>
             </form>
         </div>
     </div>
-    
+
 @endsection

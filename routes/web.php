@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontController::class, 'index']);
 
 
-// BackOffice
+// backend
 Route::get('backend', [BackController::class, 'index']);
     // Nav
 Route::get('createNavLinks', [BackController::class, 'createNavLinks']);
