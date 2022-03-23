@@ -30,10 +30,10 @@
     <header id="header" class="header-tops">
         <div class="container">
 
-        <h1><a href="{{$homeTitle[0]->href}}">{{$homeTitle[0]->name}}</a></h1>
+        <h1><a href="{{$homeTitle[0]->href??''}}">{{$homeTitle[0]->name??''}}</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-        <h2>{{$homeTitle2[0]->description1}} <span>{{$homeTitle2[0]->descriptionPost}}</span> {{$homeTitle2[0]->description2}}</h2>
+        <h2>{{$homeTitle2[0]->description1??''}} <span>{{$homeTitle2[0]->descriptionPost??''}}</span> {{$homeTitle2[0]->description2??''}}</h2>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
