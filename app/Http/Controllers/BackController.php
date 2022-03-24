@@ -672,7 +672,7 @@ class BackController extends Controller
         $update->href = $request->href;
         $update->name = $request->name;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateSocialLinks(Request $request, $id)
     {
@@ -687,7 +687,7 @@ class BackController extends Controller
         $update->aClass = $request->aClass;
         $update->iClass = $request->iClass;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateAboutTitles(Request $request, $id)
     {
@@ -699,7 +699,7 @@ class BackController extends Controller
         $update->title = $request->title;
         $update->para = $request->para;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateAboutMeImg(Request $request, $id)
     {
@@ -711,7 +711,7 @@ class BackController extends Controller
         $update->src = $request->src;
         $update->alt = $request->alt;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateAboutMeContents(Request $request, $id)
     {
@@ -726,7 +726,7 @@ class BackController extends Controller
         $update->description = $request->description;
         $update->text = $request->text;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateAboutMeInfos(Request $request, $id)
     {
@@ -741,7 +741,7 @@ class BackController extends Controller
         $update->title = $request->title;
         $update->text = $request->text;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
 
     }
     public function updateAboutCounts(Request $request, $id)
@@ -758,7 +758,7 @@ class BackController extends Controller
         $update->number = $request->number;
         $update->description = $request->description;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateAboutSkills(Request $request, $id)
     {
@@ -773,7 +773,7 @@ class BackController extends Controller
         $update->iValue = $request->iValue;
         $update->ariaValue = $request->ariaValue;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateAboutInterests(Request $request, $id)
     {
@@ -789,7 +789,7 @@ class BackController extends Controller
         $update->iColor = $request->iColor;
         $update->description = $request->description;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateResumeTitles(Request $request, $id)
     {
@@ -801,7 +801,7 @@ class BackController extends Controller
         $update->title = $request->title;
         $update->para = $request->para;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateResumeTitles2(Request $request, $id)
     {
@@ -812,7 +812,7 @@ class BackController extends Controller
         $update = ResumeTitle2::find($id);
         $update->title = $request->title;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateResumePresentations(Request $request, $id)
     {
@@ -824,7 +824,7 @@ class BackController extends Controller
         $update->name = $request->name;
         $update->text = $request->text;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateResumeInfos(Request $request, $id)
     {
@@ -835,7 +835,7 @@ class BackController extends Controller
         $update = ResumeInfo::find($id);
         $update->info = $request->info;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateResumeEducations(Request $request, $id)
     {
@@ -852,7 +852,7 @@ class BackController extends Controller
         $update->institution = $request->institution;
         $update->description = $request->description;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateResumeProfessionals(Request $request, $id)
     {
@@ -876,7 +876,7 @@ class BackController extends Controller
         $update->task5 = $request->task5;
         $update->task6 = $request->task6;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updatePortfolioTitles(Request $request, $id)
     {
@@ -888,7 +888,7 @@ class BackController extends Controller
         $update->title = $request->title;
         $update->para = $request->para;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updatePortfolioFilters(Request $request, $id)
     {
@@ -900,7 +900,7 @@ class BackController extends Controller
         $update->data = $request->data;
         $update->name = $request->name;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
 
         $store = new PortfolioFilter;
     }
@@ -923,7 +923,7 @@ class BackController extends Controller
         $update->a1Title = $request->a1Title;
         $update->a2href = $request->a2href;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
 
         $store = new PortfolioFilter;
     }
@@ -937,7 +937,7 @@ class BackController extends Controller
         $update->title = $request->title;
         $update->para = $request->para;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function updateContactCards(Request $request, $id)
     {
@@ -952,7 +952,7 @@ class BackController extends Controller
         $update->title = $request->title;
         $update->description = $request->description;
         $update->save();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
 
 
@@ -962,103 +962,103 @@ class BackController extends Controller
     {
         $destroy = Navlink::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroySocialLinks($id)
     {
         $destroy = SocialLink::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAboutTitles($id)
     {
         $destroy = AboutTitle::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAboutMeImg($id)
     {
         $destroy = AboutMeImage::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAboutMeContents($id)
     {
         $destroy = AboutMeContent::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAboutMeInfos($id)
     {
         $destroy = AboutMeInfo::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAboutCounts($id)
     {
         $destroy = AboutCount::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAboutSkills($id)
     {
         $destroy = AboutSkill::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAboutInterests($id)
     {
         $destroy = AboutInterest::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyResumeTitles($id)
     {
         $destroy = ResumeTitle::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyResumeTitles2($id)
     {
         $destroy = ResumeTitle2::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyResumePresentations($id)
     {
         $destroy = ResumePresentation::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyResumeInfos($id)
     {
         $destroy = ResumeInfo::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyResumeEducations($id)
     {
         $destroy = ResumeEducation::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyResumeProfessionals($id)
     {
         $destroy = ResumeProfessional::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyPortfolioTitles($id)
     {
         $destroy = PortfolioTitle::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyPortfolioFilters($id)
     {
         $destroy = PortfolioFilter::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyPortfolioDivs($id)
     {
@@ -1068,19 +1068,19 @@ class BackController extends Controller
         }
         $destroy->delete();
 
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyContactTitles($id)
     {
         $destroy = ContactTitle::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyContactCards($id)
     {
         $destroy = ContactCard::find($id);
         $destroy->delete();
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
 
 
@@ -1092,7 +1092,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllSocialLinks()
     {
@@ -1100,7 +1100,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllAboutTitles()
     {
@@ -1108,7 +1108,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllAboutMeImg()
     {
@@ -1116,7 +1116,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllAboutMeContents()
     {
@@ -1124,7 +1124,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllAboutMeInfos()
     {
@@ -1132,7 +1132,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllAboutCounts()
     {
@@ -1140,7 +1140,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllAboutSkills()
     {
@@ -1148,7 +1148,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllAboutInterests()
     {
@@ -1156,7 +1156,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllResumeTitles()
     {
@@ -1164,7 +1164,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllResumeTitles2()
     {
@@ -1172,7 +1172,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllResumePresentations()
     {
@@ -1180,7 +1180,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllResumeInfos()
     {
@@ -1188,7 +1188,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllResumeEducations()
     {
@@ -1196,7 +1196,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllResumeProfessionals()
     {
@@ -1204,7 +1204,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllPortfolioTitles()
     {
@@ -1212,7 +1212,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllPortfolioFilters()
     {
@@ -1220,7 +1220,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllPortfolioDivs()
     {
@@ -1228,7 +1228,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllContactTitles()
     {
@@ -1236,7 +1236,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
     public function destroyAllContactCards()
     {
@@ -1244,7 +1244,7 @@ class BackController extends Controller
         foreach ($destroyALL as $destroy) {
             $destroy->delete();
         };
-        return redirect('/backoffice');
+        return redirect('/backend');
     }
 
 }
